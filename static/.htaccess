@@ -1,0 +1,38 @@
+AddType  font/woff  .woff
+AddType  font/woff2  .woff2
+AddType  text/html;charset=utf-8  .md
+
+# Prevent mod_dir appending a slash to directory requests
+DirectorySlash Off
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+
+  RewriteCond %{HTTP_HOST} ^www\.(.*)$ [NC]
+  RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+
+  # redirect v2 showcase urls
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteRule ^showcase(.*)$ https://getuikit.com/v2/showcase$1 [R=301,L]
+
+  # Rewrite /foo to /foo.html if it exists
+  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
+  RewriteRule !\.\w{2,4}$ %{REQUEST_URI}.html [L]
+</IfModule>
+
+<FilesMatch "\.html$">
+    Header set Cache-Control "public, max-age=300"
+</FilesMatch>
+
+<FilesMatch "package\.json$">
+    Header set Cache-Control "public, max-age=300"
+</FilesMatch>
+
+<FilesMatch ".(js|css|ico|svg|jpg|jpeg|bmp|png|gif|webp|woff|woff2)$">
+    Header set Cache-Control "public, max-age=84600"
+</FilesMatch>
+
+# Don't show directory listings
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>

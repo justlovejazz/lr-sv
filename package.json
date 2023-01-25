@@ -1,0 +1,52 @@
+{
+    "name": "lemonroom-webkit",
+    "version": "2.0.0",
+    "description": "Lemonroom app built with Svelte",
+    "author": "Lemonroom <info@lemonroom.ru> (https://lemonroom.ru)",
+    "homepage": "https://lemonroom.ru/",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/justlovejazz/lemonroom"
+    },
+    "license": "ISC",
+    "keywords": [
+        "3d",
+        "three",
+        "svelte",
+        "sveltekit",
+        "graphics"
+    ],
+    "scripts": {
+        "dev": "vite dev",
+        "build": "vite build",
+        "preview": "vite preview",
+        "postinstall": "symlink-dir ./node_modules/uikit-lemonroom ./static/assets/uikit && cd ./static/assets/uikit && yarn install",
+        "compile": "yarn compile-less && yarn compile-uikit-tests",
+        "compile-less": "make-dir static/css && lessc less/theme.less > static/css/theme.css --rewrite-urls=all --clean-css",
+        "compile-uikit-tests": "cd ./static/assets/uikit && yarn compile-js tests"
+    },
+    "devDependencies": {
+        "@sveltejs/adapter-static": "1.0.0",
+        "@sveltejs/kit": "^1.0.1",
+        "clipboard": "2.0.11",
+        "eslint": "^8.30.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-plugin-svelte3": "^4.0.0",
+        "highlight.js": "9.12.0",
+        "less": "^4.1.3",
+        "less-plugin-clean-css": "^1.5.1",
+        "make-dir-cli": "^3.0.0",
+        "marked": "^4.2.4",
+        "prettier": "^2.8.1",
+        "prettier-plugin-svelte": "^2.9.0",
+        "svelte": "^3.55.0",
+        "symlink-dir": "^5.0.1",
+        "uikit-lemonroom": "https://github.com/justlovejazz/uikit-lemonroom",
+        "vite": "^4.0.2",
+        "vite-plugin-esmodule": "^1.4.4"
+    },
+    "type": "module",
+    "dependencies": {
+        "ogl": "^0.0.103"
+    }
+}

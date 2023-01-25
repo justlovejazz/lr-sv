@@ -1,0 +1,144 @@
+{
+  "node_modules/clipboard/dist/clipboard.min.js": {
+    "file": "_app/immutable/assets/clipboard.min-e17a1d81.js",
+    "src": "node_modules/clipboard/dist/clipboard.min.js"
+  },
+  ".svelte-kit/generated/nodes/5.js": {
+    "file": "_app/immutable/chunks/5-a7767a52.js",
+    "src": ".svelte-kit/generated/nodes/5.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/hello/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/3.js": {
+    "file": "_app/immutable/chunks/3-24bb7c28.js",
+    "src": ".svelte-kit/generated/nodes/3.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/docs/[slug]/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/1.js": {
+    "file": "_app/immutable/chunks/1-7cf3b650.js",
+    "src": ".svelte-kit/generated/nodes/1.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+error.svelte"
+    ]
+  },
+  "_stores-8d8c9108.js": {
+    "file": "_app/immutable/chunks/stores-8d8c9108.js",
+    "imports": [
+      "_singletons-14896c65.js"
+    ]
+  },
+  ".svelte-kit/generated/nodes/4.js": {
+    "file": "_app/immutable/chunks/4-99d511a5.js",
+    "src": ".svelte-kit/generated/nodes/4.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/download/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/2.js": {
+    "file": "_app/immutable/chunks/2-7b1cd628.js",
+    "src": ".svelte-kit/generated/nodes/2.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+page.svelte"
+    ]
+  },
+  ".svelte-kit/generated/nodes/0.js": {
+    "file": "_app/immutable/chunks/0-6cf8ea42.js",
+    "src": ".svelte-kit/generated/nodes/0.js",
+    "isDynamicEntry": true,
+    "imports": [
+      "src/routes/+layout.svelte"
+    ]
+  },
+  "src/routes/hello/+page.svelte": {
+    "file": "_app/immutable/components/pages/hello/_page.svelte-5027f784.js",
+    "src": "src/routes/hello/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_singletons-14896c65.js",
+      "_Header-db80454f.js"
+    ]
+  },
+  "src/routes/+error.svelte": {
+    "file": "_app/immutable/components/pages/_error.svelte-8f948065.js",
+    "src": "src/routes/+error.svelte",
+    "isEntry": true,
+    "imports": [
+      "_singletons-14896c65.js",
+      "_stores-8d8c9108.js"
+    ]
+  },
+  "_Header-db80454f.js": {
+    "file": "_app/immutable/chunks/Header-db80454f.js",
+    "imports": [
+      "_singletons-14896c65.js",
+      "_stores-8d8c9108.js"
+    ]
+  },
+  "src/routes/download/+page.svelte": {
+    "file": "_app/immutable/components/pages/download/_page.svelte-1313df94.js",
+    "src": "src/routes/download/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_singletons-14896c65.js",
+      "_Header-db80454f.js"
+    ]
+  },
+  "src/routes/+page.svelte": {
+    "file": "_app/immutable/components/pages/_page.svelte-794a68db.js",
+    "src": "src/routes/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_singletons-14896c65.js",
+      "_Header-db80454f.js"
+    ]
+  },
+  "src/routes/docs/[slug]/+page.svelte": {
+    "file": "_app/immutable/components/pages/docs/_slug_/_page.svelte-a95414ba.js",
+    "src": "src/routes/docs/[slug]/+page.svelte",
+    "isEntry": true,
+    "imports": [
+      "_singletons-14896c65.js",
+      "_stores-8d8c9108.js",
+      "_Header-db80454f.js"
+    ],
+    "assets": [
+      "_app/immutable/assets/clipboard.min-e17a1d81.js"
+    ]
+  },
+  "src/routes/+layout.svelte": {
+    "file": "_app/immutable/components/pages/_layout.svelte-c1f95e6f.js",
+    "src": "src/routes/+layout.svelte",
+    "isEntry": true,
+    "imports": [
+      "_singletons-14896c65.js",
+      "_stores-8d8c9108.js"
+    ]
+  },
+  "_singletons-14896c65.js": {
+    "file": "_app/immutable/chunks/singletons-14896c65.js"
+  },
+  "node_modules/@sveltejs/kit/src/runtime/client/start.js": {
+    "file": "_app/immutable/start-f50b4dee.js",
+    "src": "node_modules/@sveltejs/kit/src/runtime/client/start.js",
+    "isEntry": true,
+    "imports": [
+      "_singletons-14896c65.js"
+    ],
+    "dynamicImports": [
+      ".svelte-kit/generated/nodes/0.js",
+      ".svelte-kit/generated/nodes/1.js",
+      ".svelte-kit/generated/nodes/2.js",
+      ".svelte-kit/generated/nodes/3.js",
+      ".svelte-kit/generated/nodes/4.js",
+      ".svelte-kit/generated/nodes/5.js"
+    ]
+  }
+}
